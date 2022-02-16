@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 
 :root {
-  --background: #050608;
-  --secondary-bg: #0a0c0f;
+  --background: #161a22;
+  --secondary-bg: #27313a;
   --text: #f5f5f5;
   --secondary-txt: #ffffff;
   --primary: #0DD609;
@@ -11,6 +11,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 2em;
 }
 
 .navLogo {
@@ -283,7 +284,16 @@ section {
 }
 
 footer {
+    background-color: var(--background);
+}
+
+.footer {
   background-color: var(--background);
+  background-image: url("https://media.discordapp.net/attachments/937142217779331079/943146093028466718/Gem_Footer.png?width=1441&height=177");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding: 4rem;
 }
 
 a {
