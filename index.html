@@ -97,7 +97,55 @@
         fill="var(--secondary-bg)"
         fill-opacity="1"
         d="M0,96L40,106.7C80,117,160,139,240,133.3C320,128,400,96,480,117.3C560,139,640,213,720,240C800,267,880,245,960,234.7C1040,224,1120,224,1200,234.7C1280,245,1360,267,1400,277.3L1440,288L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
-      ></path>
+      >
+      <animate 
+          repeatCount="indefinite" 
+          fill="#454599" 
+          attributeName="d" 
+          dur="10s" 
+          values="
+            M0 77 
+            C 473,283
+              822,-40
+              1920,116 
+
+            V 359 
+            H 0 
+            V 67 
+            Z; 
+
+            M0 77 
+            C 473,-40
+              1222,283
+              1920,136 
+
+            V 359 
+            H 0 
+            V 67 
+            Z; 
+
+            M0 77 
+            C 973,260
+              1722,-53
+              1920,120 
+
+            V 359 
+            H 0 
+            V 67 
+            Z; 
+
+            M0 77 
+            C 473,283
+              822,-40
+              1920,116 
+
+            V 359 
+            H 0 
+            V 67 
+            Z
+            ">
+        </animate>
+      </path>
     </svg>
     <main>
       <section id="feature">
@@ -150,7 +198,7 @@
             <div class="row" style="color: var(--secondary-txt);">
               <div class="love_counter column2">
                 <h1 class="love_count" style="font-size: 70px;">
-                  <strong>5</strong>
+                  <strong>7</strong>
                 </h1>
                 <h4 style="color: var(--primary);margin-top: -6px;">
                   Total Servers
@@ -158,7 +206,7 @@
               </div>
               <div class="love_counter column2">
                 <h1 class="love_count" style="font-size: 70px;">
-                  <strong>50</strong>
+                  <strong>123</strong>
                 </h1>
                 <h4 style="color: var(--primary);margin-top: -6px;">
                   Total Users
@@ -212,9 +260,10 @@
     </svg>
     <footer>
       <h3>
-        made with <span style="color: red">❤</span> by
+        <span style="color: var(--primary)">Econ</span> made with <span style="color: red">❤</span> by
         <a href="https://facebook.com/girattle.gfx/">@GirattleGFX</a>
       </h3>
     </footer>
+    <div class="footer"></div>
   </body>
 </html>
