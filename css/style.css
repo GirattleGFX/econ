@@ -234,6 +234,7 @@ body {
 body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 header {
@@ -244,14 +245,15 @@ header {
 
 .btn {
   background-color: var(--secondary-bg);
-  border: 2px solid var(--primary);
+  border: 0.2em solid var(--primary);
   color: var(--primary);
-  padding: 5px 10px 5px 10px;
-  border-radius: 15px;
+  padding: 0.4em 0.6em 0.4em 0.6em;
+  border-radius: 15em;
   font-weight: bold;
   outline: none;
   cursor: pointer;
   transition-duration: 0.5s;
+  font-size: 0.7em;
 
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -271,12 +273,16 @@ section {
   padding: 50px;
 }
 
-#feature {
+#feature, #about {
   background-color: var(--secondary-bg);
 }
 
 #cmds {
   background-color: var(--background);
+}
+
+.cmd-name {
+  font-weight: bold;
 }
 
 #support {
@@ -591,16 +597,31 @@ svg {
   }
 }
 
-.slideup-right, .slideup-left {
-  transition: all 0.40s linear;
+.target {
+    animation-name: robot;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
-.slideup-right:hover {
-  transform: skewx(-10deg);
-  transform: skewY(-10deg);
+.econ {
+    height: 200px;
+    width: auto 400px;
+    position: absolute;
+    top: 2.5em;
+    left: 5px;
 }
 
-.slideup-left:hover {
-  transform: skewx(10deg);
-  transform: skewY(10deg);
+@keyframes robot {
+    0% { transform: translate(0,  0px); }
+    15%  { transform: translate(15px, 15px); }
+    25%  { transform: translate(-15px, 15px); }
+    35%  { transform: translate(-10px, 15px); }
+    45% { transform: rotate(15deg);}
+    50% { transform: translate(500px, 0px); }
+    65%  { transform: translate(515px, 15px); }
+    70%  { transform: translate(485px, 15px); }
+    75%  { transform: translate(490px, 15px); }
+    85% { transform: rotate(-10deg);}
+    100%   { transform: translate(0, -0px); }   
 }
