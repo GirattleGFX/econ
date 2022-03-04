@@ -7,6 +7,10 @@
   --secondary-txt: #ffffff;
   --primary: #0DD609;
   --font: "Quicksand", sans-serif;
+
+  --econ1: url("https://media.discordapp.net/attachments/839948164022009936/948343318390120508/EconFire1.png");
+  --econ2: url("https://media.discordapp.net/attachments/839948164022009936/948343318176235530/EconFire2.png");
+  --econ3: url("https://media.discordapp.net/attachments/839948164022009936/948343317962297394/EconFire3.png");
 }
 
 html {
@@ -597,7 +601,16 @@ svg {
   }
 }
 
+div.sticky {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
 .target {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 9em;
     animation-name: robot;
     animation-duration: 15s;
     animation-iteration-count: infinite;
@@ -605,24 +618,23 @@ svg {
 }
 
 .econ {
-    height: 200px;
+    height: 5em;
     width: auto 400px;
     position: absolute;
     top: 2.5em;
-    left: 5px;
+    left: 15px;
 }
 
 @keyframes robot {
-    0% { transform: translate(0,  0em); }
-    15%  { transform: translate(0.4em, 1.4em); }
-    25%  { transform: translate(-0.4em, 1.4em); }
-    35%  { transform: translate(-0.35em, 1.4em); }
+    0% { transform: translate(0,  0px); }
+    15%  { transform: translate(10%, 10%); }
+    25%  { transform: translate(4%, 10%); }
+    35%  { transform: translate(9%, 10%); }
     45% { transform: rotate(15deg);}
-    50% { transform: translate(37em, 0em); }
-    65%  { transform: translate(37.4em, 1.4em); }
-    70%  { transform: translate(36.9em, 1.4em); }
-    75%  { transform: translate(36.95em, 1.4em); }
-    85% { transform: rotate(-10deg);}
-    100%   { transform: translate(0, -0em); }   
+    50% { transform: translate(81%, 0px); }
+    65%  { transform: translate(80.3%, 4%); }
+    70%  { transform: translate(80.5%, 4%); }
+    75%  { transform: translate(81%, 4%); }
+    85% { transform: rotate(-15deg);}
+    100%   { transform: translate(0, -0px); }   
 }
-
